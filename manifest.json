@@ -1,12 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "Acho, where are we?",
+ 
+    "name": "Modify CSS and HTML",
     "version": "0.1.0",
-    "description": "Ask Acho where you are and he'll bark the page title at you.",
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-        "tabs"
-    ]
+    "description": "Lateral blog post demo extension",
+   
+    "content_scripts": [{
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "matches": ["*"]
+    }]
 }
