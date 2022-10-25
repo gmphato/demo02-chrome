@@ -7,7 +7,7 @@ divs.forEach(d => {
 });
 
 function createItem(name) {
-    let pre = document.createElement('prev');
+    let pre = document.createElement('pre');
     pre.textContent = name;
     pre.style.fontSize = '12px'
     pre.style.border = '1px dotted red';
